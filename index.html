@@ -26,6 +26,12 @@
                     <i class="bx bx-sun"></i>
                 </span>
             </label>
+            <!-- Language switcher temporarily disabled while translations are being updated.
+            <button type="button" id="language-toggle" class="language-toggle" aria-label="Switch language to Russian">
+                <span class="language-toggle-option is-active" data-lang-option="en">EN</span>
+                <span class="language-toggle-divider" aria-hidden="true">/</span>
+                <span class="language-toggle-option" data-lang-option="ru">RU</span>
+            </button> -->
             <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
                 <i class="bx bx-menu" aria-hidden="true"></i>
             </button>
@@ -45,18 +51,19 @@
         <div class="hero-shell">
             <div class="hero-copy">
                 <h1>
-                    <span class="hero-title">Hi, I am Anastasiia</span>
+                    <span class="hero-title">Anastasiia Lehova</span>
                 </h1>
-                <p class="hero-role"><span id="typed-text" data-texts="|Software Engineer|Data Scientist|Full-Stack Developer"></span></p>
-                <p class="hero-description">Building efficient systems learning from real-world behavior, and continuously improving performance and reliability.</p>
+                <p class="hero-role"><span id="typed-text" data-texts="|Software Engineer|Graduate Researcher|Data & Visualization"></span></p>
+                <p class="hero-description">I build software applications and explore how AI, robotics, and visualization can solve real-world problems.</p>
+                <p class="hero-status"><i class="bx bx-book-open" aria-hidden="true"></i><span>Currently pursuing a Ph.D. in Computer Science.</span></p>
                 <div class="hero-badges" aria-label="Core focus areas">
-                    <span>Backend Systems</span>
-                    <span>Data & APIs</span>
-                    <span>HCI Research</span>
+                    <span>Software Engineering</span>
+                    <span>Data & Visualization</span>
+                    <span>Graduate Research</span>
                 </div>
                 <div class="hero-actions">
                     <a href="#contact" class="navbar-contact-link hero-cta">Get in touch</a>
-                    <a href="#projects" class="hero-secondary-link"><i class="bx bx-show" aria-hidden="true"></i><span>See work</span></a>
+                    <a href="#projects" class="hero-secondary-link"><i class="bx bx-show" aria-hidden="true"></i><span>Explore my work</span></a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -72,7 +79,7 @@
                         </span>
                     </a> 
                     <div class="hero-links" aria-label="Social links">
-                        <a href="https://github.com/Lehoa02?tab=repositories" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <a href="https://github.com/lehovaa" target="_blank" rel="noreferrer" aria-label="GitHub">
                             <i class="bx bxl-github" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/anastasiia-lehova" target="_blank" rel="noreferrer" aria-label="LinkedIn">
@@ -96,11 +103,12 @@
                          <span class="about-me-quote" tabindex="0" data-translation="Through hardships to the stars" aria-label="Per aspera ad astra. Translation: Through hardships to the stars.">Per aspera ad astra</span>
                      </h2>
                 <p>
-                   I recently graduated from the University of Wisconsin–Green Bay with a B.S. in Computer Science and a minor in Mathematics. I also hold a B.A. in Translation from Priazovskiy State University in Ukraine, with a focus on English, Russian, Ukrainian, and French. 
-                   
+                   I graduated from the University of Wisconsin–Green Bay with a B.S. in Computer Science and a minor in Mathematics. I am currently pursuing a Ph.D. in Computer Science at the University of Hawaiʻi at Mānoa. I also hold a B.A. in Translation from Priazovskiy State University in Ukraine, with a focus on English, Russian, Ukrainian, and French.
+
+
                 </p>
                 <p>
-                   My background across both technical and language-focused fields has influenced the way I think about building systems: with structure, clarity, and attention to how people interact with them. Outside of coding, I enjoy playing chess, reading books, and sketching.
+                  My background across both technical and language-focused fields has influenced the way I think about building systems: with structure, clarity, and attention to how people interact with them. Outside of coding, I enjoy playing chess, reading books, and sketching.
                 </p>
                 <!-- <div class="about-me-tags" aria-label="About me highlights">
                     <span>Interface design</span>
@@ -120,6 +128,7 @@
                             <span>React</span>
                             <span>REST APIs</span>
                             <span>Tailwind CSS</span>
+
                         </div>
                     </article>
                     <article class="skill-card">
@@ -141,6 +150,8 @@
                             <span>Debugging</span>
                             <span>Docker</span>
                             <span>QA Testing</span>
+                            <span>Unity</span>
+                            <span>VR</span>
                         </div>
                     </article>
                 </div>
@@ -224,6 +235,20 @@
                             <div class="content-box">
                                 <div class="date">
                                     <i class="bx bx-calendar"></i>
+                                    August 2026 - Currently
+                                </div>
+                                <h3>University of Hawaiʻi at Mānoa</h3>
+                                <p><b>Ph.D. in Computer Science.</b></p>
+                                <ul class="timeline-points">
+                                    <li>GPA: <b>4.0/4.0</b></li>
+                                    <li>Graduate Research Assistant at the LAVA lab</li>
+                                    <li>Research in advanced visualization and interactive systems</li>
+                                    <li>Coursework in Artificial Intelligence, Computer Vision, and Generative AI</li>
+                                </ul>
+                            </div>
+                            <div class="content-box">
+                                <div class="date">
+                                    <i class="bx bx-calendar"></i>
                                     January 2022 - December 2025
                                 </div>
                                 <h3>University of Wisconsin Green Bay</h3>
@@ -257,14 +282,58 @@
 
     <section id="experience" class="timeline-section">
         <div class="timeline-shell">
-            <h2 class="heading">
-                My Experience
-            </h2>
+            <div class="section-heading-row">
+                <div>
+                    <h2 class="heading">My Experience</h2>
+                </div>
+                <div class="experience-filters" data-active-filter="all" role="group" aria-label="Filter experience">
+                    <span class="experience-filter-slider" aria-hidden="true"></span>
+                    <button type="button" class="experience-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="experience-filter" data-filter="industry" aria-pressed="false">Industry</button>
+                    <button type="button" class="experience-filter" data-filter="research" aria-pressed="false">Research</button>
+                </div>
+            </div>
             <div class="timeline-wrapper">
                 <div class="timeline-row">
                     <div class="timeline-col">
                         <div class="timeline-box">
-                            <div class="content-box">
+                            <div class="content-box" data-category="research">
+                                <div class="date">
+                                    <i class="bx bx-calendar"></i>
+                                    August 2026 - Currently
+                                </div>
+                                <h3>University of Hawaiʻi at Mānoa</h3>
+                                <p><b>Graduate Research Assistant</b></p>
+                                <ul class="timeline-tags" aria-label="Skills used in this role">
+                                    <li>Research</li>
+                                    <li>Advanced Visualization</li>
+                                    <li>HCI</li>
+                                </ul>
+                                <ul class="timeline-points">
+                                    <li>Conducting graduate research in advanced visualization, human-computer interaction, and interactive learning systems.</li>
+                                    <li>Developing software applications integrating AI, voice interaction, and visualization technologies.</li>
+                                    <li>Collaborating with researchers on interdisciplinary projects involving augmented reality, robotics, and machine learning.</li>
+                                </ul>
+                            </div>
+                            <div class="content-box" data-category="research">
+                                <div class="date">
+                                    <i class="bx bx-calendar"></i>
+                                    July - August 2026
+                                </div>
+                                <h3>Sage Summer Camp</h3>
+                                <p><b>Research Participant and Collaborator</b></p>
+                                <ul class="timeline-tags" aria-label="Topics explored">
+                                    <li>Edge AI</li>
+                                    <li>Visualization Lab</li>
+                                    <li>AGU26</li>
+                                </ul>
+                                <ul class="timeline-points">
+                                    <li>Participated in the Chicago-based program hosted by UIC and its Visualization Lab.</li>
+                                    <li>Collaborated with researchers from UIC and Oregon on visualization and Edge AI ideas.</li>
+                                    <li>Developed and submitted a research proposal for AGU26.</li>
+                                </ul>
+                            </div>
+                            <div class="content-box" data-category="industry">
                                 <div class="date">
                                     <i class="bx bx-calendar"></i>
                                     August 2025 - Currently
@@ -285,7 +354,7 @@
 
                                 </ul>
                             </div>
-                            <div class="content-box">
+                            <div class="content-box" data-category="industry">
                                 <div class="date">
                                     <i class="bx bx-calendar"></i>
                                     May 2025 - August 2025
@@ -305,7 +374,7 @@
                                     <li>Optimized SQL queries and extended system functionality to improve data reliability and operational efficiency.</li>
                                 </ul>
                             </div>
-                            <div class="content-box">
+                            <div class="content-box" data-category="research">
                                 <div class="date">
                                     <i class="bx bx-calendar"></i>
                                     August 2024 - April 2025
@@ -324,7 +393,7 @@
                                     <li>Built an ERP system and programmed interactive robot behaviors to study real-world system performance and user interaction.</li>
                                 </ul>
                             </div>
-                            <div class="content-box">
+                            <div class="content-box" data-category="industry">
                                 <div class="date">
                                     <i class="bx bx-calendar"></i>
                                     September 2023 - January 2025
@@ -349,6 +418,72 @@
             </div>
         </div>
     </section>
+
+    <!-- <section id="research" class="research-section">
+        <div class="research-shell">
+            <div class="research-heading">
+                <h2 class="heading">Research & Academic Work</h2>
+                <p>Exploring audio analysis, educational AI, and visual ways to understand the impact of the built environment.</p>
+            </div>
+            <div class="research-filters" data-active-filter="all" role="group" aria-label="Filter research">
+                <button type="button" class="research-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="research-filter" data-filter="publication" aria-pressed="false">Publications</button>
+                <button type="button" class="research-filter" data-filter="conference" aria-pressed="false">Conferences</button>
+            </div>
+            <div class="research-grid">
+                <article class="research-card" data-category="publication">
+                    <span class="research-card-icon"><i class="bx bx-file" aria-hidden="true"></i></span>
+                    <span class="research-card-label">Publication</span>
+                    <h3>Distributed PCM Audio Analytics Pipeline</h3>
+                    <p>Scalable BPM and tonal feature extraction using Celery and librosa.</p>
+                    <span class="research-card-meta">Audio analytics · Python</span>
+                </article>
+                <article class="research-card" data-category="conference">
+                    <span class="research-card-icon"><i class="bx bx-calendar-event" aria-hidden="true"></i></span>
+                    <span class="research-card-label">Conference</span>
+                    <h3>Sage Summer Camp</h3>
+                    <p>Attended in June/July 2026.</p>
+                    <span class="research-card-meta">Participant · 2026</span>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="current-work" class="current-work-section">
+        <div class="current-work-shell">
+            <div class="current-work-heading">
+                <span class="breaking-label"><span class="breaking-dot"></span> Breaking update</span>
+                <h2 class="heading">What I’m working on now</h2>
+            </div>
+            <div class="work-news-ticker" aria-label="Current work update">
+                <span class="ticker-label">LIVE</span>
+                <span class="ticker-text">New research and project updates from the lab</span>
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </div>
+            <div class="current-work-grid">
+                <article class="current-work-card">
+                    <div class="current-work-card-top">
+                        <span class="current-work-icon"><i class="bx bx-bulb" aria-hidden="true"></i></span>
+                        <span class="current-work-date">NOW · 01</span>
+                    </div>
+                    <span class="current-work-label">Project update</span>
+                    <h3>Building voice-to-voice AI for teaching</h3>
+                    <p>Developing a voice-to-voice AI integration for an educational project.</p>
+                    <span class="current-work-meta">AI · Education · Interaction</span>
+                </article>
+                <article class="current-work-card">
+                    <div class="current-work-card-top">
+                        <span class="current-work-icon"><i class="bx bx-buildings" aria-hidden="true"></i></span>
+                        <span class="current-work-date">NOW · 02</span>
+                    </div>
+                    <span class="current-work-label">Research update</span>
+                    <h3>Mapping the impact of buildings</h3>
+                    <p>Exploring how buildings affect the areas around them through data visualization.</p>
+                    <span class="current-work-meta">Visualization · Built environment</span>
+                </article>
+            </div>
+        </div>
+    </section> -->
 
     <section id="projects">
         <div class="projects-container">
@@ -376,11 +511,12 @@
                 <div class="footer-quote-section">
                     <p class="footer-quote">"Thank you for visiting my platform! I look forward to the opportunity to collaborate and work together!"</p>
                     <ul class="social-icons">
-                        <li><a href="https://github.com/Lehoa02?tab=repositories" target="_blank"><i class="bx bxl-github"></i></a></li>
+                        <li><a href="https://github.com/lehovaa" target="_blank"><i class="bx bxl-github"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/anastasiia-lehova" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
                         <li><a href="https://scholar.google.com" target="_blank" rel="noreferrer" aria-label="Google Scholar">
                             <i class="ai ai-google-scholar" aria-hidden="true"></i>
                         </a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-right">
